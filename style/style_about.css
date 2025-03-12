@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario: #191A19;
+    --color-secundario:#faffeb;
+    --color-terciario: rgb(78, 178, 25);
+    --color-hover: #1E5128;
+
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-krona: "Krona One", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu{
+    display: flex;
+    gap: 80px
+}
+
+.header__menu__link{
+    font-family: var(--font-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+.header__menu__link:hover{
+    font-family: var(--font-krona);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    padding: 6% 15%;
+    justify-content: space-between;
+}
+
+.about__contenido{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about__contenido__titulo{
+    font-family: var(--font-krona);
+    font-size: 2.25rem;
+}
+
+.about__contenido__parrafo{
+    font-family: var(--font-montserrat);
+    font-size: 1.25rem;
+    text-align: justify;
+    padding: 0 3% 0 0;
+}
+
+.about__imagen{
+    margin: 0 0 0 5%;
+    width: 40%;
+}
+
+.footer{
+    padding: 24px;
+    width: 100%;
+    background-color: var(--color-terciario);
+    font-family: var(--font-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-primario);
+    text-align: center;
+}
+
+
+@media (max-width:1200px){
+
+    .header{
+        padding: 8%;
+    }
+
+    .header__menu{
+        justify-content: center;
+
+    }
+
+    .about{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .about__contenido{
+        width: auto;
+    }
+
+    .presentacion__imagen{
+        padding: 0 0 10% 0;
+    }
+
+}
